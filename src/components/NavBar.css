@@ -1,0 +1,9 @@
+.Nav-list{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    background-color: aqua;
+}
+.links{
+    margin: 20px;
+}
