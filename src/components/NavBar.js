@@ -8,7 +8,8 @@ export function NavBar() {
         <nav>
             <ul className="Nav-list">
                 <li>
-                    {Cartlcon}
+                    <Cartlcon/>
+                    <hr />
                 </li>
                 <li className="links">
                     <NavLink to="/" activeClassName="activeLink">

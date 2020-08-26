@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { NavBar } from "./components/NavBar";
+import Cartlcon from "./components/Cartlcon.js"
+
 
 //import logo from './logo.svg';
 //import './App.css';
@@ -33,6 +35,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <span className="inner-text">Inicio</span>
+            {Cartlcon}
           </Route>
           <Route exact path="/productos">
             <span className="inner-text">Productos</span>
