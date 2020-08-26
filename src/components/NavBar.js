@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
-import {Cartlcon} from "./Cartlcon.js"
+import Cartlcon from "./Cartlcon.js"
 
 export function NavBar() {
     return(
