@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { NavBar } from "./components/NavBar";
 import {Home} from "./components/Home.js"
+import {Counter} from "./components/Counter.js"
 
 
 //import logo from './logo.svg';
@@ -42,6 +43,7 @@ function App() {
           </Route>
           <Route exact path="/carrito">
             <span className="inner-text">Carrito</span>
+            <Counter/>
           </Route>
         </Switch>
     </BrowserRouter>
