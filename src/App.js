@@ -44,7 +44,7 @@ function App() {
           </Route>
           <Route exact path="/carrito">
             <span className="inner-text">Carrito</span>
-            <ItemCount/>
+            <ItemCount min={0} max={10}/>
 
           </Route>
         </Switch>

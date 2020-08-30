@@ -9,7 +9,7 @@ export default class Boton extends Component {
     render() {
         return (
             <div>
-               <button>{this.props.sign}</button> 
+               <button onClick={this.props.onClick}>{this.props.sign}</button> 
             </div>
         )
     }

@@ -2,18 +2,22 @@
  import Boton from './Boton';
  //import Input from './Input';
 
- export function ItemCount(){
+ export function ItemCount(props){
 
     const [valor, setValor] = useState(0);
-
-
+    
+    
     function incrementar() {
-        console.log("incrementa")
+        if (valor<props.max){
         setValor(valor+1);
+        }
     }
 
     const decrementar = () => {
-        setValor(valor-1);
+        if (valor>props.min) {
+            setValor(valor-1);
+        }
+        
     }
   
      return(
@@ -27,3 +31,4 @@
      );
  }
 
+ export default ItemCount
