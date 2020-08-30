@@ -1,6 +1,6 @@
  import React, { useState } from 'react';
  import Boton from './Boton';
- //import Input from './Input';
+ import Input from './Input';
 
  export function ItemCount(props){
 
@@ -13,19 +13,25 @@
         }
     }
 
-    const decrementar = () => {
+    function decrementar() {
         if (valor>props.min) {
             setValor(valor-1);
         }
         
+    }
+
+    function itemsAgregados() {
+        let items = valor
+        alert(items+" items han sido agregados a su carrito")
     }
   
      return(
         <>
             <div>
                 <Boton onClick={incrementar} sign={"+"}/>
-                <input value={valor} readOnly={true}></input>
+                <Input value={valor} readOnly={true}></Input>
                 <Boton onClick={decrementar} sign={"-"}/>
+                <Boton onClick={itemsAgregados} sign={"agregar al carrito"}/>
             </div>
         </>
      );
