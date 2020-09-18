@@ -7,16 +7,16 @@ export default class ItemsList extends Component {
     constructor(props){
         super(props);
         this.state = {
-            productosPromise: []
+            productos: []
         };
 
     }
     componentDidMount(){
-        obtenerProductos().then(productosPromise => this.setState({productos: productosPromise}))
+        obtenerProductos().then(productos => this.setState({productos: productos}))
     }
     render(){
         return(
-             productosPromise.map()   
+             this.state.productos.map()   
         )
     }
 }
