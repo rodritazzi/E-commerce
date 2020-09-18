@@ -16,7 +16,9 @@ export default class ItemsList extends Component {
     }
     render(){
         return(
-             this.state.productos.map()   
+            <div>
+             {this.state.productos.map(productos => <li>{productos}</li>)}
+             </div>
         )
     }
 }
