@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 import { NavBar } from "./components/NavBar";
 import {Home} from "./components/Home.js"
 import {ItemCount} from "./components/ItemCount.js"
-import {ItemLists} from "./components/ItemsList.js"
+import ItemLists from "./components/ItemsList.js"
 
 
 

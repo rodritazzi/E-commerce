@@ -4,7 +4,7 @@ export default class Items extends Component {
     render() {
         return (
             
-                data = [
+                 [
                     { id: '1', name: 'producto1'},
                     { id: '2', name: 'producto2'},
                     { id: '3', name: 'producto3'},
