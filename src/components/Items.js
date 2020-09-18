@@ -10,7 +10,7 @@ export function obtenerProductos() {
             
         
        
-    task.then((res) => 
+    Promise.then((res) => 
                 {
 
             return (
