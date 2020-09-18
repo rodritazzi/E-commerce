@@ -6,7 +6,6 @@
 
     const [valor, setValor] = useState(0);
     
-    
     function incrementar() {
         if (valor<props.max){
         setValor(valor+1);
@@ -24,6 +23,7 @@
         let items = valor
         alert(items+" items han sido agregados a su carrito")
     }
+    
   
      return(
         <>
@@ -36,5 +36,8 @@
         </>
      );
  }
+
+ 
+
 
  export default ItemCount
