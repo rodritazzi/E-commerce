@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar";
 import {Home} from "./components/Home.js"
 import {ItemCount} from "./components/ItemCount.js"
 import ItemLists from "./components/ItemsList.js"
+import ItemDetailContainer from "./components/ItemDetailContainer"
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/carrito">
             <span className="inner-text">Carrito</span>
             <ItemCount min={0} max={10}/>
+            <ItemDetailContainer/>
 
           </Route>
         </Switch>
