@@ -21,7 +21,7 @@ export default function ItemDetailContainer() {
 return (
         <>
         <br></br>
-            <Boton sign={"comprar"}></Boton>
+            
             <ItemDetail product={item.name}></ItemDetail>
         </>
     );

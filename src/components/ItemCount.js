@@ -30,8 +30,9 @@
             <div>
                 <Boton onClick={incrementar} sign={"+"}/>
                 <Input value={valor} readOnly={true}></Input>
-                <Boton onClick={decrementar} sign={"-"}/>
+                <Boton onClick={decrementar}      sign={"-"}/>
                 <Boton onClick={itemsAgregados} sign={"agregar al carrito"}/>
+                <Boton sign={"comprar "+valor}></Boton>
             </div>
         </>
      );
